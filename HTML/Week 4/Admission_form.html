@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form</title>
+</head>
+<body style="background-color: lightskyblue; text-align: center;">
+    <h1>Admission Form</h1>
+    <form>
+      <table border="1px" align="center" cellpadding="10px" cellspacing="0px" style="background-color: white; text-align: left;">
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone Number:</label></td>
+          <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender:</label></td>p;
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+          <td><label for="course">Course:</label></td>
+          <td>
+            <select id="course" name="course">
+              <option value="">Select Course</option>
+              <option value="btech">B.Tech</option>
+              <option value="mtech">M.Tech</option>
+              <option value="phd">Ph.D.</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="hobbies">Hobbies:</label></td>
+          <td>
+            <input type="text" id="hobbies" name="hobbies" placeholder="Enter your hobbies">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" id="dob" name="dob" max="2026-02-12"></td>
+        </tr>
+        <tr> 
+            <td><label for="certificate">Upload certificate:</label></td>
+            <td><input type="file" id="certificate" name="certificate"></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address:</label></td>
+            <td><textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset"></td>
+        </tr>
+      </table>
+    </form>
+</html>

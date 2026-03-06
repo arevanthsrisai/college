@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amrita Vishwa Vidyapeetham</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, rgb(85, 0, 0), rgb(255, 0, 0));
+        }
+
+        .container{
+            width: 90%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1{
+            text-align: center;
+            color: crimson;
+        }
+
+        .campus-links{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .campus-links a{
+            text-decoration: none;
+            margin: 0 15px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .campus-links a:hover{
+            color: crimson;
+        }
+
+        .main{
+            display: flex;
+            gap: 20px;
+        }
+
+        .login{
+            width: 35%;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .login input, .login select{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        .login button{
+            width: 100%;
+            padding: 10px;
+            background: rgb(131, 0, 0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .about{
+            width: 65%;
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .campus-content{
+            display: none;
+        }
+
+        .campus-content:target{
+            display: block;
+        }
+
+        .campus-content img{
+            width: 90%;
+            height: 550px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AMRITA VISHWA VIDYAPEETHAM</h1>
+
+    <div class="campus-links">
+        <a href="#amaravati">Amaravati</a>
+        <a href="#chennai">Chennai</a>
+        <a href="#amritapuri">Amritapuri</a>
+        <a href="#coimbatore">Coimbatore</a>
+        <a href="#bangalore">Bangalore</a>
+        <a href="#mysore">Mysore</a>
+    </div>
+
+    <div class="main">
+
+        <div class="about">
+            <h3>About the Campus</h3>
+
+            <div id="amaravati" class="campus-content">
+                <img src="amaravati.jpg" alt="Amaravati Campus">
+                <h4>Amaravati Campus</h4>
+                <p>Modern infrastructure and advanced engineering programs.A newer campus, expanding the university's presence in South India.</p>
+            </div>
+
+            <div id="amritapuri" class="campus-content">
+                <img src="amritapuri.jpg" alt="Amritapuri Campus">
+                <h4>Amritapuri Campus</h4>
+                <p>Main campus located in Kerala known for research excellence.Known for engineering and biotechnology.Situated near the beach, it focuses on, for example, biotechnology, engineering, and spiritual-based education.</p>
+            </div>
+
+            <div id="chennai" class="campus-content">
+                <img src="chennai.jpg" alt="Chennai Campus">
+                <h4>Chennai Campus</h4>
+                <p>Strong industry collaboration and technical programs.Offers various engineering programs.</p>
+            </div>
+
+            <div id="coimbatore" class="campus-content">
+                <img src="coimbatore.jpg" alt="Coimbatore Campus">
+                <h4>Coimbatore Campus</h4>
+                <p>Known for innovation and academic excellence.Administrative headquarters, engineering, and business schools.Located in Ettimadai, it is the administrative headquarters and houses the main Schools of Engineering and Business. It features a large, green campus with extensive infrastructure (libraries, labs).</p>
+            </div>
+
+            <div id="mysore" class="campus-content">
+                <img src="mysore.jpg" alt="Mysore Campus">
+                <h4>Mysore Campus</h4>
+                <p>Focused on computing and engineering education.</p>
+            </div>
+
+            <div id="bangalore" class="campus-content">
+                <img src="bengaluru.jpg" alt="Bangalore Campus">
+                <h4>Bangalore Campus</h4>
+                <p>Offers management and technology programs.Focuses on engineering and technology. Focuses on technology, with strong placement opportunities and proximity to the tech hub.</p>
+            </div>
+
+        </div>
+        
+        <div class="login">
+            <h3>Student Login</h3>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Enter Email" required>
+            <input type="tel" placeholder="Enter Phone Number" required>
+            <select required>
+                <option value="">Select Course</option>
+                <option>B.Tech</option>
+                <option>M.Tech</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>BBA</option>
+                <option>MBA</option>
+                <option>PhD</option>
+                <option>Other</option>
+            </select>
+
+            <button>Login</button>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <p style="text-align:center;font-size: large; margin:auto;">Life and living are not the same. For living, we may need a job, money, a home, a car and other creature comforts. However, these alone fail to make life complete. For that, we need love, compassion, tenderness — a heart that knows and responds to the pain of others. We need broadmindedness and maturity in thought and action.<br>– Amma –</p>
+    </div>
+</div>
+
+</body>
+</html>

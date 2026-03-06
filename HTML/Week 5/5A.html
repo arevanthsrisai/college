@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Layout with Images</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .card-container{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .card{
+            background-color: white;
+            width: 260px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card img{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content{
+            padding: 15px;
+        }
+
+        .card h2{
+            margin: 10px 0;
+        }
+
+        .card p{
+            font-size: 14px;
+            color: gray;
+        }
+
+        .card button{
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: none;
+            background-color:blue;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="valorant.jpg">
+            <div class="card-content">
+                <h2>Valorant</h2>
+                <p>Valorant is a popular 5v5 character-based tactical first-person shooter developed by Riot Games. It combines precise, high-stakes gunplay with unique agent abilities, requiring strategic teamwork and fast thinking across 13-round halves. Players can choose from a diverse roster of agents to outplay opponents in various competitive and casual modes.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="cs2.jpg">
+            <div class="card-content">
+                <h2>Counter-Strike 2</h2>
+                <p>Counter-Strike 2 (CS2) is a premier tactical first-person shooter developed by Valve, released on September 27, 2023, as a free-to-play, direct successor to Counter-Strike: Global Offensive. Built on the Source 2 engine, the game features major technical upgrades including revamped, high-fidelity maps, overhauled lighting, and a new "sub-tick" server architecture designed for better gameplay responsiveness. While it maintains the core 5v5 bomb-defusal gameplay, it introduces dynamic, volumetric smoke grenades that interact with the environment.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+                <img src="fn.jpg">
+            <div class="card-content">
+                <h2>Fortnite</h2>
+                <p>Fortnite, developed by Epic Games and released in 2017, is a massively popular free-to-play battle royale game that has become a major cultural phenomenon. In the primary game mode, 100 players skydive onto an island, scavenging for weapons and resources to be the last person or team standing while avoiding a shrinking "storm". A key differentiator from other shooters is the ability to instantly build structures for defense or tactical advantage, along with a bright, cartoonish art style that appeals to a wide audience. With constant updates, seasonal changes, and collaborations, Fortnite</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

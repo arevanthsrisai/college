@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Website - Amrita</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header{
+            background: purple;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+        .nav{
+            background:black;
+            text-align:center;
+            padding:12px;
+        }
+
+        .nav label{
+            color:white;
+            margin:0 20px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        .nav label:hover{
+            color:yellow;
+        }
+
+        iframe{
+            width:100%;
+            height:500px;
+            border:none;
+        }
+
+        input{
+            display:none;
+        }
+
+        .content{
+            display:none;
+        }
+
+        #home:checked ~ #homeFrame,
+        #about:checked ~ #aboutFrame,
+        #contact:checked ~ #contactFrame{
+            display:block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Theesakapo</h2>
+    </div>
+
+
+    <input type="radio" name="menu" id="home" >
+    <input type="radio" name="menu" id="about">
+    <input type="radio" name="menu" id="contact">
+
+
+    <div class="nav">
+        <label for="home">Home</label>
+        <label for="about">About</label>
+        <label for="contact">Contact</label>
+    </div>
+    <iframe id="homeFrame" class="content" srcdoc="
+        <h1>Welcome to Theesakapo</h1>
+        <p>Theesakapo is a leading technology company based in Guntur, India, founded by Revanth in 2026. It started as a vast e-commerce platform offering a wide range of products and services, including electronics, clothing, groceries, and digital content. Theesakapo is also known for its fast delivery services, which has become a major revenue stream for the company. With its customer-centric approach, innovative technologies like 5 min delivery and VIP delivery, and global reach, Theesakapo has become one of the largest and most influential companies in the world.</p>
+    ">
+    </iframe>
+    
+    <iframe id="aboutFrame" class="content" srcdoc="
+        <h1>About Us</h1>
+        <p>We are a team of passionate individuals dedicated to providing the best shopping experience possible. Our mission is to make online shopping simple, secure, and enjoyable for everyone.
+        <br>Our vision is to be the most customer-centric company in the world, where customers can find and discover anything they might want to buy online. We are committed to innovation, quality, and customer satisfaction, and we strive to exceed our customers' expectations every day.</p>
+        <p>At Theesakapo, we believe in giving back to the community and supporting sustainable practices. We are committed to reducing our environmental impact and promoting social responsibility in all aspects of our business.</p>
+        <p>Thank you for choosing Theesakapo. We look forward to serving you and providing you with an exceptional shopping experience.</p>
+    ">
+    </iframe>
+
+    <iframe id="contactFrame" class="content" srcdoc="
+        <h1>Contact Us</h1>
+        <p>If you have any questions or need assistance, please feel free to reach out to us at
+        <br>Email: info@theesakapo.com</p>
+    ">
+    </iframe>
+
+</body>
+</html>
