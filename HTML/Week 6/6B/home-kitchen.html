@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+            margin:0;
+            background: whitesmoke;
+        }
+        .container{
+            display: flex;
+            padding: 20px;
+            gap: 30px;
+            flex-wrap: wrap;
+
+        }
+        .product {
+            background-color: white;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+            text-align: center;
+            padding: 20px;
+            height: fit-content;
+            size: 100%;
+        }
+        
+       button{
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: none;
+            background-color:blue;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: darkblue;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="product">
+                <img src="stove.png" alt="Product 1" height="100px" width="70px">
+                <h2>Gas Stove</h2>
+                <p style="text-decoration: line-through; color: lightslategrey;">$399.99</p>
+                <p>$349.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="dish_washer.png" alt="Product 2" height="100px" width="100px">
+                <h2>Dishwasher</h2>
+                <p style="text-decoration: line-through; color: lightslategrey;">$699.99</p>
+                <p>$599.99</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="product">
+                <img src="mixer.png" alt="Product 3" height="100px" width="100px">
+                <h2>Stand Mixer</h2>
+                <p style="text-decoration: line-through; color: lightslategrey;">$199.99</p>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="bag.png" alt="Product 4" height="100px" width="150px">
+                <h2>Kitchen Storage Bag</h2>
+                <p style="text-decoration: line-through; color: lightslategrey;">$29.99</p>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="curtains.png" alt="Product 5" height="100px" width="130px">
+                <h2>Kitchen Curtains</h2>
+                <p style="text-decoration: line-through; color: lightslategrey;">$49.99</p>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="table.png" alt="Product 6" height="100px" width="130px">
+                <h2>Dining Table</h2>
+                <p style="text-decoration: line-through; color: lightslategrey;">$299.99</p>
+                <p>$249.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </body>
+</html>

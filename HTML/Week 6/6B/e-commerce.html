@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Website</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+
+        .container{
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns:200px 1fr;
+            grid-template-areas: 
+            "header header"
+            "sale sale"
+            "sidebar products"
+            "footer footer";
+            gap: 10px;
+            width: 100%;
+            min-height: 100vh;
+        }
+        
+        .header{
+            grid-area: header;
+            background: green;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+        
+        .sale{
+            grid-area: sale;
+            background: lightpink;
+            color: black;
+            text-align:left;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product-list{
+            grid-area: products;
+        }
+
+        .footer{
+            grid-area: footer;
+            background: #333;
+            color:white;
+            text-align:center;
+            padding:5px;
+       }
+
+        a{
+            text-decoration: none;
+            color: black;
+
+        }
+
+        a:hover{
+            color: blue;
+        }
+
+        li{
+            margin: 5px 0;
+        }
+
+        iframe{
+            height: 100%;
+            width: 100%;
+            border:none;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Value E-commerce</h1>
+        </div>
+
+        <div class="sale">
+            <marquee behavior="scroll" direction="right" scrollamount="25"><h1>Summer Sale - Up to 50% Off!</h1></marquee>
+        </div>
+
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="electronics.html" target="frame">Electronics</a></li>
+                <li><a href="sports.html" target="frame">Sports</a></li>
+                <li><a href="home-kitchen.html" target="frame">Home & Kitchen</a></li>
+                <li><a href="books.html" target="frame">Books</a></li>
+            </ul>
+        </div>
+
+    
+        <div class="product-list">
+            <iframe name="frame"></iframe>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Value E-commerce. All rights reserved.</p>
+        </div>
+    </div>
+</html>
