@@ -26,15 +26,18 @@
         
         .header{
             grid-area: header;
-            background: green;
+            background: black;
             color:white;
             text-align:center;
             padding:15px;
+            gap : 10px;
+            display: flex;
+            align-items: center;
         }
         
         .sale{
             grid-area: sale;
-            background: lightpink;
+            background: orange;
             color: black;
             text-align:left;
         }
@@ -85,6 +88,7 @@
 
     <div class="container">
         <div class="header">
+            <img src="logo.png" alt="logo" width="60px" height="60px">
             <h1>Value E-commerce</h1>
         </div>
 
@@ -93,6 +97,7 @@
         </div>
 
         <div class="sidebar">
+            <h3><a href="home.html" target="frame">Home</a></h3>
             <h3>Categories</h3>
             <ul>
                 <li><a href="electronics.html" target="frame">Electronics</a></li>
@@ -102,9 +107,8 @@
             </ul>
         </div>
 
-    
         <div class="product-list">
-            <iframe name="frame"></iframe>
+            <iframe name="frame" src="home.html"></iframe>
         </div>
         <div class="footer">
             <p>&copy; 2024 Value E-commerce. All rights reserved.</p>
