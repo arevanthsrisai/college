@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ball animation</title>
+    <style>
+        @keyframes move {
+            from {transform: translate(0, 0); fill: blue;}
+            to {transform: translate(0px, 200px); fill: red;}
+        }
+    </style>
+</head>
+<body>
+    <svg width="200" height="300" style="margin: 50px;">
+        <circle cx="50" cy="50" r="50" style="animation: move 2s ease infinite alternate;"></circle>
+    </svg>
+</body>
+</html>
