@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Calculator</title>
+</head>
+<body>
+
+    <h2>Calculate Grade from 6 Subjects</h2>
+
+    <label>Subject 1:</label>
+    <input type="number" id="s1"><br><br>
+
+    <label>Subject 2:</label>
+    <input type="number" id="s2"><br><br>
+
+    <label>Subject 3:</label>
+    <input type="number" id="s3"><br><br>
+
+    <label>Subject 4:</label>
+    <input type="number" id="s4"><br><br>
+
+    <label>Subject 5:</label>
+    <input type="number" id="s5"><br><br>
+
+    <label>Subject 6:</label>
+    <input type="number" id="s6"><br><br>
+
+    <button onclick="calculateGrade()">Get Grade</button>
+
+    <script>
+        function calculateGrade() {
+            let s1 = Number(document.getElementById("s1").value);
+            let s2 = Number(document.getElementById("s2").value);
+            let s3 = Number(document.getElementById("s3").value);
+            let s4 = Number(document.getElementById("s4").value);
+            let s5 = Number(document.getElementById("s5").value);
+            let s6 = Number(document.getElementById("s6").value);
+
+            let average = (s1 + s2 + s3 + s4 + s5 + s6) / 6;
+            let grade;
+
+            if (average < 60) {
+                grade = "E";
+            } else if (average < 70) {
+                grade = "D";
+            } else if (average < 80) {
+                grade = "C";
+            } else if (average < 90) {
+                grade = "B";
+            } else if (average <= 100) {
+                grade = "A";
+            } else {
+                grade = "Invalid Marks";
+            }
+
+            alert("Average: " + average + "\nGrade: " + grade);
+        }
+    </script>
+
+</body>
+</html>

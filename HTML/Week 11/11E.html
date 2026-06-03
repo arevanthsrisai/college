@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+body { font-family: Arial; background:#fff3e0; text-align:center; }
+.container { margin-top:50px; background:white; padding:20px; width:320px; margin:auto; border-radius:10px; }
+input, button { padding:10px; width:90%; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+<input type="text" id="name" placeholder="Name"><br>
+<input type="text" id="email" placeholder="Email"><br>
+<input type="password" id="password" placeholder="Password"><br>
+<button type="submit">Register</button>
+<p id="msg"></p>
+</form>
+
+</div>
+
+<script>
+function validateForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("password").value;
+    let msg = document.getElementById("msg");
+
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if (name === "") {
+        msg.innerText = "Name cannot be empty";
+        msg.style.color = "red";
+        return false;
+    }
+
+    if (!email.match(emailPattern)) {
+        msg.innerText = "Invalid Email";
+        msg.style.color = "red";
+        return false;
+    }
+
+    if (pass.length < 6) {
+        msg.innerText = "Password must be at least 6 characters";
+        msg.style.color = "red";
+        return false;
+    }
+
+    msg.innerText = "Form Submitted Successfully";
+    msg.style.color = "green";
+    return true;
+}
+</script>
+
+</body>
+</html>

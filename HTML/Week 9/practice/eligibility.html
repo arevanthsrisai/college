@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = 19; 
+        let marks = 40;
+        let attendance = 80; 
+
+        if (age >= 18) {
+            if (marks >= 50) {
+                if (attendance >= 75) {
+                    document.write("Student is eligible.");
+                } else {
+                    document.write("Student is not eligible due to low attendance.");
+                }
+            } else {
+                window.alert("Student is not eligible due to low marks.");
+            }
+        } else {
+            console.log("Student is not eligible due to age.");
+        }
+    </script>
+</body>
+</html>

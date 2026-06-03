@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkEvenOdd(){
+            const input = document.getElementById("number").value.trim();
+            if(input === ""){
+                document.getElementById("result").innerText = "Please enter a number";
+                return;
+            }
+            const number = (input);
+            if(isNaN(number)){
+                document.getElementById("result").innerText = "Please enter a valid number";
+                return;
+            }
+            if(number % 2 === 0){
+                document.getElementById("result").innerText = number + " is even.";
+            } else {
+                document.getElementById("result").innerText = number + " is odd.";
+            }
+        }
+
+    </script>
+    
+    <input type="text" id="number" placeholder="Enter a number">
+    <button type="button" onclick="checkEvenOdd()">Check</button>
+    <p id="result"></p>
+</body>
+</html>

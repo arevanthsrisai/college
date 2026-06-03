@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Strength</title>
+<style>
+body { font-family: Arial; background:#fdf6e3; text-align:center; }
+.container { margin-top:100px; background:white; padding:20px; width:300px; margin:auto; border-radius:10px; }
+input { padding:10px; width:90%; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Password Strength</h2>
+<input type="password" id="password" placeholder="Enter Password" onkeyup="checkStrength()">
+<p id="msg"></p>
+</div>
+
+<script>
+function checkStrength() {
+    let pass = document.getElementById("password").value;
+    let msg = document.getElementById("msg");
+
+    if (pass.length < 6) {
+        msg.innerText = "Weak Password";
+        msg.style.color = "red";
+    } else {
+        msg.innerText = "Strong Password";
+        msg.style.color = "green";
+    }
+}
+</script>
+
+</body>
+</html>

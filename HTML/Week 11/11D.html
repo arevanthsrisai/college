@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mobile Validation</title>
+<style>
+body { font-family: Arial; background:#e8f5e9; text-align:center; }
+.container { margin-top:100px; background:white; padding:20px; width:300px; margin:auto; border-radius:10px; }
+input { padding:10px; width:90%; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Mobile Number Check</h2>
+<input type="text" id="mobile" placeholder="Enter Mobile Number" onblur="validateMobile()">
+<p id="msg"></p>
+</div>
+
+<script>
+function validateMobile() {
+    let mobile = document.getElementById("mobile").value;
+    let msg = document.getElementById("msg");
+
+    if (mobile.length !== 10 || isNaN(mobile)) {
+        msg.innerText = "Enter valid 10-digit number";
+        msg.style.color = "red";
+    } else {
+        msg.innerText = "Valid Number";
+        msg.style.color = "green";
+    }
+}
+</script>
+
+</body>
+</html>
